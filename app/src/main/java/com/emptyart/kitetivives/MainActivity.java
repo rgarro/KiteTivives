@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 
     private WebView webView;
     private final String weather_api_url = "https://www.weather.com/api/";
-    private final String api_id = "wer76whb22i2i565";//Nacho es un gay homosexual malparido jehova mas hijueputa!!
+    private final String api_id = "wer76whb22i2i565";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         //webView.getSettings().setJavaScriptEnabled(true);
         //webView.loadUrl(weather_api_url+api_id);
 
-        Log.d("weather=url", weather_api_url+api_id);
+        Log.d("weather_url", weather_api_url+api_id);
     }
 
     @Override
