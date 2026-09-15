@@ -2,8 +2,6 @@ package com.emptyart.kitetivives;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.util.Log;
 /**
  *            |    |    |
@@ -23,29 +21,11 @@ import android.util.Log;
  */
 public class MainActivity extends Activity {
 
-    private WebView webView;
-    private final String weather_api_url = "https://www.weather.com/api/";
-    private final String api_id = "wer76whb22i2i565";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //webView = (WebView) findViewById(R.id.webview);
-        //webView.setWebViewClient(new WebViewClient());
-        //webView.getSettings().setJavaScriptEnabled(true);
-        //webView.loadUrl(weather_api_url+api_id);
-
-        Log.d("weather_url", weather_api_url+api_id);
     }
 
-    @Override
-    public void onBackPressed() {
-        if (webView.canGoBack()) {
-            webView.goBack();
-        } else {
-            super.onBackPressed();
-        }
-    }
 }
