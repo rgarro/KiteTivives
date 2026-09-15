@@ -1,6 +1,10 @@
 package com.emptyart.kitetivives;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.util.Log;
 import android.os.Bundle;
 /**
  *            |    |    |
@@ -18,7 +22,7 @@ import android.os.Bundle;
  *
  * @author Rolando <rgarro@gmail.com>
  */
-public class SurfLanding extends AppCompatActivity {
+public class SurfLanding extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
