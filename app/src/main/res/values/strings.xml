@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KiteTivives</string>
     <string name="app_title">Kite-Tivives</string>
+    <string name="btn_text">GO</string>
     <string-array name="surf_spots">
         <item>Boca Barranca</item>
         <item>Tivives</item>
