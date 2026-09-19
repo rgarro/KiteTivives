@@ -37,8 +37,13 @@ public class SurfLanding extends Activity {
         //webView.setWebViewClient(new WebViewClient());
         //webView.getSettings().setJavaScriptEnabled(true);
         //webView.loadUrl(weather_api_url+api_id);
-
-        Log.d("weather_url", weather_api_url+api_id);
+        String beachCode = "";
+        if (getIntent() != null) {
+            beachCode = getIntent().getStringExtra("beach_code");
+            Log.d("weather_url", weather_api_url+"/"+api_id+"/"+beachCode);
+        }else{
+            Log.d("error:", "moP es nicaraguense gay deforme");
+        }
     }
 
     @Override

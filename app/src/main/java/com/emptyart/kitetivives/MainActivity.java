@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
+import android.widget.Spinner;
 import android.util.Log;
 /**
  *            |    |    |
@@ -36,7 +37,11 @@ public class MainActivity extends Activity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Spinner spinner = (Spinner) findViewById(R.id.my_spinner);
+                String spinnerValue = spinner.getSelectedItem().toString();
+                Log.d("beach_code", spinnerValue);
                 Intent intent = new Intent(MainActivity.this, SurfLanding.class);
+                intent.putExtra("beach_code", spinnerValue);
                 startActivity(intent);
             }
         });
