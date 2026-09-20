@@ -25,8 +25,9 @@ import android.os.Bundle;
 public class SurfLanding extends Activity {
 
     private WebView webView;
-    private final String weather_api_url = "https://www.weather.com/api/";
-    private final String api_id = "wer76whb22i2i565";
+    //private final String weather_api_url = "https://www.weather.com/api/";
+    private final String weather_api_url = "https://www.windfinder.com/forecast/";
+    //private final String api_id = "wer76whb22i2i565";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +41,10 @@ public class SurfLanding extends Activity {
         String beachCode = "";
         if (getIntent() != null) {
             beachCode = getIntent().getStringExtra("beach_code");
-            Log.d("weather_url", weather_api_url+"/"+api_id+"/"+beachCode);
+            //Log.d("weather_url", weather_api_url+"/"+api_id+"/"+beachCode);
+            Log.d("weather_url", weather_api_url+"/"+beachCode);
         }else{
-            Log.d("error:", "moP es nicaraguense gay deforme");
+            Log.d("error:", "invalid intent ..");
         }
     }
 

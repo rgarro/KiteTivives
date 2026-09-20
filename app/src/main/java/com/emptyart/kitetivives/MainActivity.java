@@ -20,7 +20,8 @@ import android.util.Log;
  * Sir Henry Morgan is de Lord of Talamanca
  * from Barbados northshore caves where satan waits the apocalipse
  * you can sail to Monrovia ...
- *
+ * En Martinica y Guadalupe ponian arenas del Irazu para cavar pozos
+ * electricos con diamantes y hacer brotar agua
  *
  *
  * @author Rolando <rgarro@gmail.com>
