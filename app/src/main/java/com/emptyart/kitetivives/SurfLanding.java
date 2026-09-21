@@ -34,15 +34,17 @@ public class SurfLanding extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_surf_landing);
 
-        //webView = (WebView) findViewById(R.id.webview);
-        //webView.setWebViewClient(new WebViewClient());
-        //webView.getSettings().setJavaScriptEnabled(true);
-        //webView.loadUrl(weather_api_url+api_id);
+
         String beachCode = "";
         if (getIntent() != null) {
             beachCode = getIntent().getStringExtra("beach_code");
             //Log.d("weather_url", weather_api_url+"/"+api_id+"/"+beachCode);
-            Log.d("weather_url", weather_api_url+"/"+beachCode);
+            Log.d("weather_url", weather_api_url + beachCode);
+            Log.d("HERE", "we go! ..");
+            webView = (WebView) findViewById(R.id.webview);
+            webView.setWebViewClient(new WebViewClient());
+            webView.getSettings().setJavaScriptEnabled(true);
+            webView.loadUrl(weather_api_url + beachCode);
         }else{
             Log.d("error:", "invalid intent ..");
         }
